@@ -1,0 +1,237 @@
+
+    body {
+    background:#f0f8ff url('body-bg.jpg');
+	text:#6e6e6e ;
+	z-index: 500;
+	
+}
+
+:root {
+	--transparent-cover: rgb(51, 63, 103, 0.4);
+	--transparent-cover-darker: rgba(51, 63, 103, 0.9);
+	--dark-color: #333f67;
+	--dark-color-text: lightsteelblue;
+}
+
+.boxing {
+	border: 2px solid red;
+	
+}
+#main_image {
+	
+	padding: 0px;
+	margin: 0px;
+	background-image:url("../images/webdesign.jpg");
+	background-position:top;
+	background-size: cover;
+	background-blend-mode: darken;
+	height: 600px;
+}
+
+#main_info {
+	background-color: var(--dark-color);
+	position: relative;
+	z-index: 2;
+	color: var(--dark-color-text);
+	margin: auto;
+	opacity: 0.9;
+}
+
+.sloped-edge {
+	background-color: #333f67;
+	height:150px;
+	left: -10%;
+	right: -10%;
+	transform: rotate(1deg);
+	z-index: 1;
+	top: 10px;
+}
+
+.sloped-edge-bottom {
+	background-color: #333f67;
+	height:100px;
+	left: -10%;
+	right: -10%;
+	transform: rotate(-1deg);
+	z-index: 1;
+	
+}
+
+
+.bottom-edge {
+	bottom: -55px;
+	
+}
+.flex_container{
+	max-width:1200px;
+	width: 1200px;
+	margin:auto;
+	overflow: visible;
+	display: flex;
+}
+
+.flex_container.eqsize > * {
+	flex: 1;
+}
+
+.body1 {
+	color: #f0f8ff;
+	z-index: 1;
+	visibility: hidden;
+}
+
+.center1{
+	text-align: center;
+	border: 3px solid green;
+}
+
+
+.resume-title{
+	font-style: 'Aldrich';
+	font-size: 32px;
+	}
+
+
+.center2{
+	float: center;
+	font-size: 15px;
+	
+	z-index: 1;
+	
+	background-size: cover;
+}
+
+.aboutinfo1 {
+	text-align: center;
+	font-size: 15px;
+}
+
+.aboutinfo2{
+	text-float: left;
+	font-size: 14px;
+}
+
+
+
+.text1 {
+	color: black ;
+	z-index: 300;
+}
+
+.text1 a {
+	color: #26d9d5 ;
+	
+}
+
+ 
+.clearfix:after {
+    display:block;
+    clear:both;
+	
+}
+ 
+/*----- Menu Outline -----*/
+.menu-wrap {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background:#3e3436;
+	
+	
+	
+	
+}
+ 
+.menu {
+    width:1000px;
+    margin:0px auto;
+	border: 3px solid green;
+	
+	
+	
+}
+ 
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:'Ek Mukta';
+	
+}
+ 
+.menu a {
+    transition:all linear 0.15s;
+    color:#919191;
+	
+	
+}
+ 
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#be5b70;
+}
+ 
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+ 
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+	left: 180px;
+    font-size:19px;
+	
+	
+	
+}
+ 
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+	
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#2e2728;
+	
+	
+}
+ 
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+ 
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+	
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:16px;
+	
+}
+ 
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+	
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#3e3436;
+	
+}

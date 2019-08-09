@@ -1,0 +1,373 @@
+html{
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+.top-header{
+	text-align: center;
+	height: 600px;
+}
+
+
+.banner{
+	background: rgba(39,170,225,0.6);
+	background-image: linear-gradient(45deg, rgba(212, 69,0, 0.9) 0%,rgba(212, 69, 0, 0.9) 50%,rgb(62, 61, 60) 50%,rgb(62, 61, 60) 100%);
+}
+
+.top-title{
+	margin-top: 10px;
+	font-family: Impact;
+	font-size: 42px;
+}
+
+.large-container {
+	max-width: 1400px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+.header-desc{
+	text-align: center;
+	float: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+	font-size: 23px;
+	font-family: Prestige Sans Unicode;
+	word-wrap: break-word;
+}
+
+.media-title  {
+	font-size: 30px;
+	color: #fff;
+	
+}
+
+.center-fix{
+	text-align: center;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.col-md-4 img{
+	float: left;
+	margin-top: 15px;
+}
+
+.col-md-4 p {
+	margin-top: 20px;
+	word-wrap: break-word;
+	font-size: 1rem;
+	
+	font-family: Lucida Sans Unicode;
+}
+
+
+.todo-container{
+	width: 1200px;
+	display: block;
+	margin-top: 250px;
+}
+
+.visitor-container{
+	text-align: center;
+	background: url(/images/city-overview.jpg) no-repeat;
+	background-size: cover;
+	padding-bottom: 60px;
+
+	
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 60px; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  
+  
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#nav-span{
+	width:100%;
+	z-index:9999;
+	padding: 10px 0 60px 0;
+	top:0;
+	left: 0;
+	right: 0;
+	font-size: 36px;
+	height: 60px;
+	background-color: #ffffff;
+	position: fixed;
+	box-shadow: 0 0 7px #666666;
+	padding-bottom: 50px;
+
+	
+}
+
+#nav-span .logo{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	display: block;
+	left: 48%;
+	transform: translateY(-100%);
+	background-image: url('../images/trophy.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	cursor: pointer;
+	
+	
+}
+
+#nav-span .login{
+	font-size: 29px;
+	position: absolute;
+	right: 20px;
+	transform: translateY(25%);
+	height: 50px;
+	cursor: pointer;
+	
+	
+}
+
+
+form {
+	border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+
+.dropbtnn{
+	color:white;
+	
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  height: 100%;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+.team-name {
+	text-align: center;
+	font-size: 32px;
+	font-family: 'Aldrich';
+	top: 50%;
+}
+
+.player-container {
+	width: 650px;
+	height: 400px;
+	border: solid 1px;
+	padding-top: 50px;
+	margin-top:50px;
+	margin-left: 240px;
+	background-color: grey;
+	text-transform: uppercase;
+	display: table;
+	
+	}
+	
+.player-container img {
+		float: left;
+		position: absolute;
+		z-index: 1;
+		transform: translateY(-18%);
+		
+		box-shadow: 2px 3px 10px #666666;
+	}
+	.player-desc {
+		font-size: 20px;
+		float: none;
+		overflow: hidden;
+		padding-left:220px;
+		margin-top: 10px;
+		box-shadow: 2px 3px 10px #666666;
+		
+		
+		
+	}
+	
+	
+	.player-name-tag {
+		font-family: 'Aldrich';
+		float: none;
+		font-size: 14px;
+		padding-left: 275px;
+		font-size: 25px;
+		box-shadow: 2px 3px 10px #666666;
+	}
+	.player-name-tag p {
+		font-size: 22px;
+		float: none;
+	}
+	
+	#player-name-tag .name {
+		float: right;
+		font-size: 14px;
+		padding-left: 10px;
+		
+	}
+	
+	.player-origin {
+		padding-top: 10px;
+		float: none;
+		font-size: 14px;
+		padding-left: 275px;
+		font-size: 25px;
+		font-family: 'Aldrich';
+		box-shadow: 2px 3px 10px #666666;
+	}
+	
+	.player-origin p {
+		font-size: 22px;
+		float: none;
+	}
+	
+	
+	.flex-container {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		height: 300px;
+		
+	}
+	
+	.inner-col {
+		padding-left: 50px;
+		padding-right: 50px;
+		display: block;
+		align-items: center;
+		width: 50%;
+	}
+	
+	.sloped-edge {
+		background-color: #ece9e9;
+		height:100px;
+		width: 1168px;
+		transform:rotate(2deg);
+		z-index:1;
+		bottom: -55px;
+		position: relative;
+		
+	}
+	
+	.sloped-edge-back {
+		background: #ece9e9;
+		transform: rotate(-2deg);
+		height: 100px;
+		width: 1168px;
+		z-index:1;
+	}
+	
+	
+	
+	
+	

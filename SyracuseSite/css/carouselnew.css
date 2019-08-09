@@ -1,0 +1,929 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  
+  color: #5a5a5a;
+  background-color: #a55151;
+  opacity: 0.9;
+  backface-visibility: 0.5;
+ 
+  
+}
+
+@viewport{
+	zoom: 1.0;
+	width: device-width;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.con-color {
+	
+	
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+
+ 
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+  
+   
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+  
+}
+
+
+.nav {
+	padding-left: 275px;
+	margin-bottom: 0;
+	list-style: none;
+	font-size: 25px;
+}
+
+.navbar-nav {
+	margin: 7.5px 20px;
+	
+}
+
+.nav li > a{
+	position: relative;
+	display: block;
+	padding: 10px 25px;
+}
+
+
+
+
+.navi {
+	overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 90px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+
+}
+
+.navi a{
+	float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.navi #logo {
+	transition: 0.4s;
+	background-image: url("images/industrycover.jpg");
+}
+
+.navi a:hover{
+	background-color: #ddd;
+  color: black;
+}
+
+.navi a.active{
+	background-color: dodgerblue;
+  color: white;
+}
+
+.navi-right {
+	 float: right;
+
+}
+
+
+
+
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 20px;
+}
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, 0);
+  filter: alpha(opacity=50);
+  opacity: .5;
+  height: 500px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  
+  
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+  
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+
+.carousel-small {
+	 height: 500px;
+  margin-bottom: 20px;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+  
+  
+}
+
+.marketing h3 {
+	font-weight: normal;
+	line-height: 160%;
+	text-indent: 20px;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.push-down {
+	margin-top: 20px;
+	padding-top:75px;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 45px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.col-container{
+	display: table;
+	width: 100%;
+}
+
+.equal-col{
+	display: table-cell;
+	padding: 20px;
+	height:600px;
+	width:400px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.equal-col-two{
+	display: table-cell;
+	padding: 20px;
+	margin-left: 10px;
+	height:600px;
+	width:400px;
+	border-style: solid;
+	border-width: 2px;
+	font-size: 25px;
+}
+
+.artist-col-two{
+	display: table-cell;
+	padding: 20px;
+	margin-left: 10px;
+	height:600px !important;
+	width:400px;
+	table-layout: fixed;
+	
+	font-size: 25px;
+	
+}
+
+.equal-col-three{
+	display: inline;
+	padding: 20px;
+	margin-left: 10px;
+	height:100px;
+	width:100px;
+	border-style: solid;
+	border-width: 2px;
+	font-size: 25px;
+}
+
+.equal-col-two p {
+	font-style: italics;
+}
+
+p.first {
+	margin-left: 85px;
+	margin-top: 30px;
+}
+
+p.second{
+	font-style: italic;
+	font-size: 50px;
+	margin-top: 30px;
+}
+
+p.artist {
+	font-style: bold;
+	font-size: 75px;
+	margin-top: 30px;
+}
+
+
+
+.equal-col img{
+	height: 600px;
+	width: 400px;
+	
+}
+
+.artist-style{
+	display: table-cell;
+	padding: 20px;
+	height:300px;
+	width:370px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.artist-style-two {
+	display: table-cell;
+	padding: 20px;
+	margin-left: 10px;
+	height:600px;
+	width:300px;
+	border-style: solid;
+	border-width: 2px;
+	font-size: 25px;
+}
+
+
+
+
+.divider{
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-right: 46px;
+}
+
+.music-display {
+	padding: 16px;
+	margin-top: 40px;
+	height: 250px;
+	width: 360px;
+	text-align: center;
+	cursor: pointer;
+}
+
+
+.music-display p {
+	margin-top: 10px;
+	margin-right: 10px;
+	font-size: 45px;
+	color: #818080;
+	font-weight: bold;
+	opacity: 1;
+}
+
+
+.music-display a {
+	color: #000000;
+	text-decoration: none;
+	
+}
+
+.artist-buttons {
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 8px;
+	font-size: 17px;
+}
+.artist-buttons:hover {
+	background-color: #ddd;
+	color: black;
+	cursor: pointer;
+}
+
+.artist-buttons a{
+	text-decoration: none;
+}
+
+
+.previous {
+	background-color: #f1f1f1;
+	color: black;
+	box-shadow: 0 1px 0 1px;
+}
+
+.next {
+	background-color: #4caf50;
+	color: black;
+	float: right;
+	display: inline-block;
+	box-shadow: 2px 2px 1px;
+}
+
+.next a{
+	text-decoration: none;
+	color: #000000;
+}
+
+.previous a {
+	text-decoration: none;
+	color: #000000;
+	
+	
+	
+}
+
+
+
+
+.new {
+    opacity: 0;
+	font-size: 50px;
+	margin-top: 60px;
+	text-align: center;
+	font-weight:bold;
+	color: #000000;
+}
+
+.new a{
+	color: #000000;
+	text-decoration: none;
+}
+.music-new {
+	 opacity: 1;
+	font-size: 50px;
+	margin-top: 10px;
+	text-align: center;
+	font-weight:bold;
+	color: black;
+}
+
+
+
+.old, .new {
+    transition: opacity 0.5s linear;
+}
+
+.wrap:hover .old {
+    opacity: 0;
+}
+.wrap:hover .new {
+    opacity: 1;
+	border-style: solid;
+	border-width: 5px;
+}
+
+.music-wrap:hover .old {
+    opacity: 1;
+}
+
+.music-wrap:hover .music-new {
+    opacity: 1;
+	inset 0 0 0 0 rgba(200,95,66, 0.4),
+		inset 0 0 0 16px rgba(255,255,255,0.6),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+ 
+
+
+.old, .music-new {
+    transition: opacity 0.5s linear;
+}
+
+
+.ch-grid{
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+.ch-grid:after,
+.ch-item:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid:after {
+	clear: both;
+}
+
+.ch-grid li {
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	margin: 20px;
+}
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	cursor: default;
+	box-shadow: 
+		inset 0 0 0 0 rgba(200,95,66, 0.4),
+		inset 0 0 0 16px rgba(255,255,255,0.6),
+		0 1px 2px rgba(0,0,0,0.1);
+	transition: all 0.4s ease-in-out;
+}
+
+.ch-img-1 { 
+	width:100%;
+	height:100%;
+	background-image: url("../images/oz2.png");
+	background-size: 100%;
+}
+
+.ch-img-2 { 
+	background-image: url("../images/ue.png");
+	background-size: 100%;
+}
+
+.ch-img-3 { 
+	background-image: url("../images/webdesign.png");
+	background-size: 100%;
+}
+
+.ch-info {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+	backface-visibility: hidden;
+}
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin: 23px 30px;
+	padding: 65px 0 0 0;
+	height: 110px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info p {
+	color: #981534;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 20px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+.ch-info p a {
+	display: block;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+	color: rgba(255,242,34, 0.8);
+}
+.ch-item:hover {
+	box-shadow: 
+		inset 0 0 0 110px rgba(200,95,66, 0.4),
+		inset 0 0 0 16px rgba(255,255,255,0.8),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+.ch-item:hover .ch-info {
+	opacity: 1;
+	transform: scale(1);	
+}
+
+
+
+
+
+
+
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  padding: 50px;
+  padding-bottom:50px;
+  margin: 1px;
+  margin-left: 30px;
+  font-size: 20px;
+  text-align: center;
+  width: 372px;
+
+}
+
+.half-rule {
+	width: 100px;
+	margin: 20px auto;
+	
+}
+
+.half-rule-two {
+	width: 210px;
+	margin: 20px auto;
+	margin-bottom: 50px;
+	margin-left: 42%
+}
+
+.half-rule-p {
+	width: 100px;
+	margin: 20px auto;
+	margin-bottom: 10px;
+}
+
+.quick-fix {
+	margin-left:10px;
+}
+
+
+
+
+.col-md-4 {
+	padding-top: 5px;
+	margin-left: 30px;
+	margin: 20 20 20;
+	padding-right:25px;
+	width: 340px;
+	text-align: center;
+}
+
+.col-md-4 p{
+	font-size: 18px;
+}
+
+.col-lg-4 a{
+	color: #1a4876;
+}
+
+.col-lg-6{
+	margin-left: 40%;
+}
+
+
+
+.col-lg-5 p {
+	margin-left: 35%;
+}
+
+.title-fix {
+	margin-left: 10%;
+}
+
+.col-lg-5 img {
+	margin-top: 15px;
+}
+
+
+
+
+.col-lg-12 p {
+	padding-top: 10px;
+	margin-right:150px;
+	font-size: 18px;
+}
+.fix {
+	margin-left: 100px;
+}
+
+.friends{
+	padding-bottom: 35px;
+}
+.friends p{
+	padding-top:5px;
+	margin-left:20px;
+	font-size: 20px;
+	margin-right: 30px;
+}
+
+.friends li {
+	font-size:17px;
+	font-style: italic;
+}
+
+.friends ul {
+	padding-left: 60px;
+}
+
+.italics {
+	font-style: italic;
+	font-size: 22px;
+	margin-top:15px;
+}
+
+.offer-title{
+	margin-bottom:15px;
+	
+}
+.grid-item-row {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 1px;
+  margin-left: 42px;
+  margin-right: 10px;
+  font-size: 10px;
+  line-height: 200%;
+  text-indent: 15px;
+  text-align: left;
+  width: 1100px;
+ 
+
+}
+
+.grid-item-row-two {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  padding-bottom:5px;
+  margin: 1px;
+  margin-left: 45px;
+  margin-right: 10px;
+  font-size: 10px;
+  line-height: 200%;
+  text-indent: 15px;
+  text-align: left;
+  width: 1100px;
+ 
+
+}
+
+.grid-item-row-three {
+
+  padding: 5px;
+  padding-bottom:5px;
+  margin: 1px;
+margin-left: 2em;
+  margin-right: 10px;
+  font-size: 25px;
+  line-height: 175%;
+ 
+  text-align: left;
+  width: 1100px;
+}
+
+.grid-item-row-four {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  padding-bottom:5px;
+  margin: 1px;
+margin-left: 1em;
+  margin-right: 10px;
+  font-size: 25px;
+  line-height: 150%;
+
+  text-align: left;
+  width: 1100px;
+ 
+
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: blue;
+  border-color: #2e6da4;
+  
+}
+.offer-fix{
+	margin-left: 52px;
+	width:300px;
+}
+
+.offer-fix-two{
+	margin-left: 52px;
+	width: 500px;
+	padding-bottom: 10px;
+}
+.what-we-offer {
+	background: #efedec;
+}
+
+.services-section {
+	background: #efedec;
+}
+
+.whole-page{
+	background: black;
+}
+
+.service-title {
+	
+}
+
+.contact-now a {
+	margin-left: 850px;
+	color: #1a4876;
+  background-color: white;
+  border-color: #2e6da4;
+	
+}
+
+.welcome-push {
+	margin-bottom: 40px;
+	padding-top: 100px;
+}
+
+.testimonials {
+	padding-top: 100px;
+	background: #efedec;
+	margin-bottom: 50px;
+
+}
+
+.navbar-brand-extended{
+	float: right;
+	line-height: 20px;
+	margin-left: 125px;
+	font-size:18px;
+	line-height: 20px;
+	padding-top: 20px;
+
+}
+
+.experience-push {
+	margin-top: 75px;
+	margin-left: 470px;
+}
+
+.services-bottom {
+	margin-left: 150px;
+	
+}
+
+.services-bottom-two{
+	margin-left: 220px;
+}
+
+
+
+.footer-social-media {
+	margin-left: 180px;
+	padding: 10px 10px;
+}
+
+
+.hidden {
+	display: none;
+}
+
+.feature-title{
+	background-color: rgba(255, 255, 255, 0.8);
+	 border: 2px solid rgba(0, 0, 0, 0.8);
+	padding: 10px;
+	padding-bottom:10px;
+	margin: 10px;
+	margin-left: 300px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	font-size: 50px;
+	text-align: justify;
+	width: 500px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+	
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+	
+	
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+	
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+	
+$('.carousel-control.left').click(function(e) {
+  e.stopPropagation();
+  $('.js-carousel').carousel('prev');
+  return false;
+});
+
+$('.carousel-control.right').click(function(e) {
+  e.stopPropagation();
+  $('.js-carousel').carousel('next');
+  return false;
+});
+
+
+
